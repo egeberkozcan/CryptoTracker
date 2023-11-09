@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <drawable android:name ="@drawable/baseline_favorite_24"/>
+    </item>
+
+    <item>
+        <drawable android:name="@drawable/baseline_favorite_border_24" />
+    </item>
+
+</selector>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Coin Tracker</string>
+    <string name="coin_tracker">CoinTracker</string>
+    <string name="no_account">Don\'t have an account ? <b>Sign up</b> </string>
+    <string name="have_account">Already have an account ? <b>Sign in</b></string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="website">Website</string>
+    <string name="_24h">24h</string>
+    <string name="rank">Rank</string>
+    <string name="market_cap">Market Cap</string>
+    <string name="volume">Volume</string>
+    <string name="available_supply">Available Supply</string>
+    <string name="total_supply">Total Supply</string>
+    <string name="favorites">Favorites</string>
+    <string name="live_prices">Live Prices</string>
+    <string name="logout">Logout</string>
+    <string name="profile">Profile</string>
+    <string name="you_are_logged_in_as">You are logged in as</string>
+    <string name="forgot_password"> <b>Forgot password ?</b> </string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">SIGN UP</string>
+</resources>
