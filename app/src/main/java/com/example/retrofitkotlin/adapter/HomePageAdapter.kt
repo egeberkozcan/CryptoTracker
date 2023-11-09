@@ -37,9 +37,17 @@ class HomePageAdapter(
     }
 
     fun setData(newCryptoList: ArrayList<CryptoModel>) {
+        val previousSize = cryptoList.size
         cryptoList.clear()
         cryptoList.addAll(newCryptoList)
-        notifyDataSetChanged()
+        val newSize = cryptoList.size
+        if (previousSize < newSize) {
+            notifyItemRangeInserted(previousSize, newSize - previousSize)
+        } else if (previousSize > newSize) {
+            notifyItemRangeRemoved(newSize, previousSize - newSize)
+        } else {
+            notifyItemRangeChanged(0, newSize)
+        }
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -52,8 +60,8 @@ class HomePageAdapter(
         fun bind(cryptoModel: CryptoModel) {
             textName.text = cryptoModel.name
             textSymbol.text = cryptoModel.symbol
-            textPrice.text = "$${String.format("%.2f", cryptoModel.price)}"
-            textPrice1d.text = "${String.format(cryptoModel.priceChange1d.toString())}%"
+            textPrice.text = String.format("$%.2f", cryptoModel.price)
+            textPrice1d.text = String.format("%.2f%%", cryptoModel.priceChange1d)
 
             if (cryptoModel.priceChange1d > 0 ){
                 textPrice1d.setTextColor(Color.GREEN)

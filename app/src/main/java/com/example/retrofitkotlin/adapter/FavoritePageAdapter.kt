@@ -39,9 +39,17 @@ class FavoritePageAdapter(
     }
 
     fun setData(newCryptoList: ArrayList<CryptoModel>) {
+        val previousSize = cryptoList.size
         cryptoList.clear()
         cryptoList.addAll(newCryptoList)
-        notifyDataSetChanged()
+        val newSize = cryptoList.size
+        if (previousSize < newSize) {
+            notifyItemRangeInserted(previousSize, newSize - previousSize)
+        } else if (previousSize > newSize) {
+            notifyItemRangeRemoved(newSize, previousSize - newSize)
+        } else {
+            notifyItemRangeChanged(0, newSize)
+        }
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -55,8 +63,8 @@ class FavoritePageAdapter(
         fun bind(cryptoModel: CryptoModel) {
             textName.text = cryptoModel.name
             textSymbol.text = cryptoModel.symbol
-            textPrice.text = "$${String.format("%.2f", cryptoModel.price)}"
-            textPrice1d.text = "${String.format(cryptoModel.priceChange1d.toString())}%"
+            textPrice.text = String.format("$%.2f", cryptoModel.price)
+            textPrice1d.text = String.format("%.2f%%", cryptoModel.priceChange1d)
 
             if (cryptoModel.priceChange1d > 0 ){
                 textPrice1d.setTextColor(Color.GREEN)
@@ -76,11 +84,11 @@ class FavoritePageAdapter(
                 val coinId = cryptoModel.id
                 builder.setTitle("Remove Coin")
                     .setMessage("Are you sure you want to remove ${cryptoModel.name} from favorites ?")
-                    .setPositiveButton("YES") {d, e->
+                    .setPositiveButton("YES") {_, _->
                         favoriteCoinRepository.deleteCoinFromFavorites(coinId, itemView.context)
                         Toast.makeText(itemView.context, "${cryptoModel.name} removed from favorites", Toast.LENGTH_SHORT).show()
                     }
-                    .setNegativeButton("NO") {d, e->
+                    .setNegativeButton("NO") {d, _->
                         d.dismiss()
                     }
                     .show()

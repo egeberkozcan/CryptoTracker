@@ -85,10 +85,10 @@ class ProfileActivity : AppCompatActivity() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Verify Email")
             .setMessage("Are you sure you want to send email verification instructions to your email ${firebaseUser.email}")
-            .setPositiveButton("SEND") {d, e->
+            .setPositiveButton("SEND") {_, _->
                 sendEmailVerification()
             }
-            .setNegativeButton("CANCEL") {d, e->
+            .setNegativeButton("CANCEL") {d, _->
                 d.dismiss()
             }
             .show()
@@ -98,10 +98,10 @@ class ProfileActivity : AppCompatActivity() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Reset Password")
             .setMessage("Are you sure you want to reset your password ?")
-            .setPositiveButton("YES") {d, e->
+            .setPositiveButton("YES") {_, _->
                 sendPasswordResetMail()
             }
-            .setNegativeButton("NO") {d, e->
+            .setNegativeButton("NO") {d, _->
                 d.dismiss()
             }
             .show()

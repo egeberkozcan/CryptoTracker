@@ -29,7 +29,7 @@ class DetailsFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            cryptoModel = it.getParcelable(ARG_CRYPTO)!!
+            cryptoModel = it.getParcelable(ARG_CRYPTO) ?: CryptoModel()
         }
     }
 
@@ -70,7 +70,7 @@ class DetailsFragment : Fragment() {
 
         binding.detailSymbol.text = cryptoModel.symbol.substring(0,3)
         binding.detailPrice.text = priceFormatted
-        binding.detailOneDayChange.text = "${String.format(cryptoModel.priceChange1d.toString())}%"
+        binding.detailOneDayChange.text = String.format("%.2f%%", cryptoModel.priceChange1d)
         binding.detailRank.text = cryptoModel.rank.toString()
         binding.detailMarketCap.text = marketCapFormatted
         binding.detailVolume.text = volumeFormatted
@@ -132,7 +132,6 @@ class DetailsFragment : Fragment() {
             }
         }
     }
-
     private fun showLastTwoDigit(priceTag: Double): String {
         val format = NumberFormat
             .getCurrencyInstance(Locale.US)
@@ -147,9 +146,7 @@ class DetailsFragment : Fragment() {
     }
 
     companion object {
-
         private const val ARG_CRYPTO = "selected_crypto"
-
         fun newInstance(cryptoModel: CryptoModel): DetailsFragment {
             val fragment = DetailsFragment()
             val args = Bundle()
