@@ -17,7 +17,8 @@ data class CryptoModel(
     val totalSupply: Double = 0.0,
     val twitterUrl: String = "",
     val websiteUrl: String = "",
-    val id: String = ""
+    val id: String = "",
+    var isExpanded: Boolean = false
 
 ): Parcelable {
 

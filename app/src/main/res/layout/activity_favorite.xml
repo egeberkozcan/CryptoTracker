@@ -11,12 +11,13 @@
         android:id="@+id/favoritesTitle"
         android:gravity="center"
         style="@style/TextAppearance.MaterialComponents.Caption"
-        android:background="@color/red"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         android:text="@string/favorites"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/favoriteCoinsRecyclerView"
