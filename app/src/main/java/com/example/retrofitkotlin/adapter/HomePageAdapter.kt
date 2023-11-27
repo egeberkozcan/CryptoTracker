@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -22,21 +21,17 @@ class HomePageAdapter(
         fun onItemClick(crypto: CryptoModel)
 
     }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.row_layout, parent, false)
         return ViewHolder(view)
     }
-
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val crypto = cryptoList[position]
         holder.bind(crypto)
     }
-
     override fun getItemCount(): Int {
         return cryptoList.size
     }
-
     fun setData(newCryptoList: ArrayList<CryptoModel>) {
         val previousSize = cryptoList.size
         cryptoList.clear()
@@ -50,28 +45,13 @@ class HomePageAdapter(
             notifyItemRangeChanged(0, newSize)
         }
     }
-
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val textName: TextView = itemView.findViewById(R.id.textName)
         private val textPrice: TextView = itemView.findViewById(R.id.textPrice)
         private val imageIcon: ImageView = itemView.findViewById(R.id.imageIcon)
         private val textSymbol: TextView = itemView.findViewById(R.id.textSymbol)
         private val textPrice1d: TextView = itemView.findViewById(R.id.textPrice1d)
-        private val expandedLayout: LinearLayout = itemView.findViewById(R.id.expandedLayout)
-        private val expandIcon: ImageView = itemView.findViewById(R.id.expandIcon)
 
-        init {
-            itemView.findViewById<ImageView>(R.id.expandIcon).setOnClickListener {
-                toggleExpandedLayout()
-            }
-        }
-
-        private fun toggleExpandedLayout() {
-            expandedLayout.visibility = if (expandedLayout.visibility == View.VISIBLE) View.GONE else View.VISIBLE
-
-            val rotation = if (expandedLayout.visibility == View.VISIBLE) 180f else 0f
-            expandIcon.rotation = rotation
-        }
         fun bind(cryptoModel: CryptoModel) {
             textName.text = cryptoModel.name
             textSymbol.text = cryptoModel.symbol
@@ -90,11 +70,6 @@ class HomePageAdapter(
             itemView.setOnClickListener {
                 listener.onItemClick(cryptoModel)
             }
-
-            expandedLayout.visibility = if (cryptoModel.isExpanded) View.VISIBLE else View.GONE
-
-            val initialRotation = if (cryptoModel.isExpanded) 180f else 0f
-            expandIcon.rotation = initialRotation
         }
     }
 }

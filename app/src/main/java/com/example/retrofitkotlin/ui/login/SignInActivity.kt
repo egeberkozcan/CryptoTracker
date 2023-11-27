@@ -106,7 +106,6 @@ class SignInActivity: AppCompatActivity() {
             }
         }
     }
-
     private fun validateData() {
         email = binding.emailAdress.text.toString().trim()
         password = binding.signInPassword.text.toString().trim()

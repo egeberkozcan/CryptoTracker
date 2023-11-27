@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity(), HomePageAdapter.OnItemClickListener {
     private var compositeDisposable: CompositeDisposable? = null
     private lateinit var actionBar: ActionBar
     private lateinit var fireBaseAuth: FirebaseAuth
-    private val REFRESH_DELAY: Long = 20000
+    private val REFRESH_DELAY: Long = 10000
     private val handler: Handler = Handler(Looper.getMainLooper())
     private lateinit var refreshRunnable: Runnable
 

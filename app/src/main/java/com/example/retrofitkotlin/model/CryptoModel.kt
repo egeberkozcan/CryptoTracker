@@ -21,7 +21,6 @@ data class CryptoModel(
     var isExpanded: Boolean = false
 
 ): Parcelable {
-
     constructor(parcel: Parcel) : this(
 
         parcel.readString()!!,
@@ -38,7 +37,6 @@ data class CryptoModel(
         parcel.readString()!!,
         parcel.readString()!!
     )
-
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(name)
         parcel.writeDouble(price)
@@ -54,20 +52,16 @@ data class CryptoModel(
         parcel.writeString(websiteUrl)
         parcel.writeString(id)
     }
-
     override fun describeContents(): Int {
         return 0
     }
-
     companion object CREATOR : Parcelable.Creator<CryptoModel> {
         override fun createFromParcel(parcel: Parcel): CryptoModel {
             return CryptoModel(parcel)
         }
-
         override fun newArray(size: Int): Array<CryptoModel?> {
             return arrayOfNulls(size)
         }
     }
-
 }
 
