@@ -17,3 +17,25 @@ This project empowers developers to build feature rich crypto apps with ease. Th
   Modern UI & Data Binding: Provides adapters and data models for dynamic, user-friendly crypto lists and detailed views.
 
   Testing & Validation: Includes setup for instrumented and unit testing to ensure app reliability.
+
+  Login Page
+  https://github.com/egeberkozcan/CryptoTracker/blob/main/Login%20Page.png?raw=true
+
+  Signup Page
+  https://github.com/egeberkozcan/CryptoTracker/blob/main/Signup%20Page.png?raw=true
+  
+  Home Page
+  https://github.com/egeberkozcan/CryptoTracker/blob/main/Home%20Page.png?raw=true
+
+  Details Page
+  https://github.com/egeberkozcan/CryptoTracker/blob/main/Details%20Page.png?raw=true
+
+  Favorites Page
+  https://github.com/egeberkozcan/CryptoTracker/blob/main/Favorites%20Page.png?raw=true
+
+  Profile Page
+  https://github.com/egeberkozcan/CryptoTracker/blob/main/Profile%20Page.png?raw=true
+  
+ 
+
+  
