@@ -18,26 +18,35 @@ This project empowers developers to build feature rich crypto apps with ease. Th
 
   Testing & Validation: Includes setup for instrumented and unit testing to ensure app reliability.
 
-  Login Page
+Login Page
   
-  <img width="200" height="800" alt="Login Page" src="https://github.com/user-attachments/assets/74b3ee76-924a-4b66-acfe-eb20331e48e3" />
+<img width="200" height="800" alt="Login Page" src="https://github.com/user-attachments/assets/74b3ee76-924a-4b66-acfe-eb20331e48e3" />
 
 
-  Signup Page
-  https://github.com/egeberkozcan/CryptoTracker/blob/main/Signup%20Page.png?raw=true
+Signup Page
   
-  Home Page
-  https://github.com/egeberkozcan/CryptoTracker/blob/main/Home%20Page.png?raw=true
+<img width="200" height="800" alt="Signup Page" src="https://github.com/user-attachments/assets/56ed217e-4c33-47ee-a053-774bc08b2dea" />
 
-  Details Page
-  https://github.com/egeberkozcan/CryptoTracker/blob/main/Details%20Page.png?raw=true
-
-  Favorites Page
-  https://github.com/egeberkozcan/CryptoTracker/blob/main/Favorites%20Page.png?raw=true
-
-  Profile Page
-  https://github.com/egeberkozcan/CryptoTracker/blob/main/Profile%20Page.png?raw=true
   
+Home Page
+  
+<img width="200" height="800" alt="Home Page" src="https://github.com/user-attachments/assets/62678903-c302-4d7b-8105-0eb35d22e3dc" />
+
+
+Details Page
+  
+<img width="200" height="800" alt="Details Page" src="https://github.com/user-attachments/assets/2ca8e51d-ead8-4c79-833b-f68ffe800c17" />
+
+
+Favorites Page
+  
+<img width="200" height="800" alt="Favorites Page" src="https://github.com/user-attachments/assets/c07bc8a4-f961-4d5d-a535-fd1e0859ee30" />
+
+
+Profile Page
+  
+<img width="200" height="800" alt="Profile Page" src="https://github.com/user-attachments/assets/19b71d8f-3b2a-41c0-8ff0-63a70fa6f381" />
+
  
 
   
