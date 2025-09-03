@@ -19,7 +19,8 @@ This project empowers developers to build feature rich crypto apps with ease. Th
   Testing & Validation: Includes setup for instrumented and unit testing to ensure app reliability.
 
   Login Page
-  https://github.com/egeberkozcan/CryptoTracker/blob/main/Login%20Page.png?raw=true<img width="200" height="800" alt="Login Page" src="https://github.com/user-attachments/assets/74b3ee76-924a-4b66-acfe-eb20331e48e3" />
+  
+  <img width="200" height="800" alt="Login Page" src="https://github.com/user-attachments/assets/74b3ee76-924a-4b66-acfe-eb20331e48e3" />
 
 
   Signup Page
