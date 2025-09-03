@@ -22,27 +22,31 @@ Login Page
   
 <img width="200" height="800" alt="Login Page" src="https://github.com/user-attachments/assets/74b3ee76-924a-4b66-acfe-eb20331e48e3" />
 
-<br>
+<br><br>
 
 Signup Page
   
 <img width="200" height="800" alt="Signup Page" src="https://github.com/user-attachments/assets/56ed217e-4c33-47ee-a053-774bc08b2dea" />
 
+<br><br>
   
 Home Page
   
 <img width="200" height="800" alt="Home Page" src="https://github.com/user-attachments/assets/62678903-c302-4d7b-8105-0eb35d22e3dc" />
 
+<br><br>
 
 Details Page
   
 <img width="200" height="800" alt="Details Page" src="https://github.com/user-attachments/assets/2ca8e51d-ead8-4c79-833b-f68ffe800c17" />
 
+<br><br>
 
 Favorites Page
   
 <img width="200" height="800" alt="Favorites Page" src="https://github.com/user-attachments/assets/c07bc8a4-f961-4d5d-a535-fd1e0859ee30" />
 
+<br><br>
 
 Profile Page
   
