@@ -22,10 +22,7 @@ Login Page
   
 <img width="200" height="800" alt="Login Page" src="https://github.com/user-attachments/assets/74b3ee76-924a-4b66-acfe-eb20331e48e3" />
 
-
-
-
-
+<br><br><br>
 
 Signup Page
   
