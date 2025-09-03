@@ -23,6 +23,8 @@ Login Page
 <img width="200" height="800" alt="Login Page" src="https://github.com/user-attachments/assets/74b3ee76-924a-4b66-acfe-eb20331e48e3" />
 
 
+
+
 Signup Page
   
 <img width="200" height="800" alt="Signup Page" src="https://github.com/user-attachments/assets/56ed217e-4c33-47ee-a053-774bc08b2dea" />
